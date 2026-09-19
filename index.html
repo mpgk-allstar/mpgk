@@ -323,9 +323,8 @@ h1 .glow{
   font-family:var(--f-mono);font-size:10.5px;letter-spacing:.08em;
   border:1px solid var(--line);color:var(--dust);padding:3.5px 8px;
 }
-.dept-wide{grid-column:1/-1}
-.dept-wide::after{background:linear-gradient(90deg,var(--ember),var(--turq))}
-.dept-wide .dept-code{color:var(--ember)}
+.dept-alt::after{background:linear-gradient(90deg,var(--ember),var(--turq))}
+.dept-alt .dept-code{color:var(--ember)}
 @media(max-width:760px){.depts{grid-template-columns:1fr}}
 
 /* ---------- why ---------- */
@@ -400,9 +399,9 @@ fieldset{border:0;padding:0;margin:0;display:flex;flex-direction:column;gap:11px
   border:solid #04121A;border-width:0 2px 2px 0;transform:rotate(45deg) scale(0);
   transition:transform .18s cubic-bezier(.2,.8,.3,1.4);
 }
-.pick input:checked~.box{background:var(--turq);border-color:var(--turq)}
-.pick input:checked~.box::after{transform:rotate(45deg) scale(1)}
-.pick input:focus-visible~.box{outline:2px solid var(--turq);outline-offset:2px}
+.pick input:checked~.box,.consent input:checked~.box{background:var(--turq);border-color:var(--turq)}
+.pick input:checked~.box::after,.consent input:checked~.box::after{transform:rotate(45deg) scale(1)}
+.pick input:focus-visible~.box,.consent input:focus-visible~.box{outline:2px solid var(--turq);outline-offset:2px}
 .pick:has(input:checked){border-color:var(--turq);background:rgba(67,171,181,.07)}
 .pick-tx{display:flex;flex-direction:column;line-height:1.35}
 .pick-tx b{font-family:var(--f-disp);font-weight:600;font-size:16px;letter-spacing:.02em}
@@ -778,7 +777,7 @@ footer{border-top:1px solid var(--line);padding-block:44px 56px;background:rgba(
         <div class="chips"><span class="chip">Paraşüt hesabı</span><span class="chip">Piroteknik</span><span class="chip">Yer testi</span><span class="chip">Dikim</span></div>
       </article>
 
-      <article class="dept dept-wide rv" style="--d:360ms">
+      <article class="dept dept-alt rv" style="--d:450ms">
         <span class="dept-code">SPN — 06</span>
         <h3>Sponsorluk</h3>
         <ul>
